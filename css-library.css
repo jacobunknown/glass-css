@@ -4,10 +4,15 @@
     --primary: #0077ff;
 }
 
+
 body {
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    overscroll-behavior: none;
+    overflow-x: hidden;
 }
+
 
 .btn {
     text-decoration: none;
@@ -15,8 +20,8 @@ body {
     border-radius: 1vh;
     padding: 0.3em;
     border: none;
-    transition: all 0.2s ease-in-out;
     background: none;
+    transition: all 0.1s ease-in-out;
 }
 
 .primary {
@@ -49,8 +54,35 @@ body {
     filter: brightness(140%);
 }
 
+
 .navbar {
-    background-color: blue;
-    display: flex
-    flex-direction: row;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 5em;
+    margin: 0;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: visible;
+    transition: all 0.3s;
+}
+
+.navbar a:hover {
+    border-bottom: 0.2em black solid;
 }
