@@ -33,9 +33,9 @@ body:not(.navbar) {
 }
 
 .regular {
-    background: linear-gradient(white, #eeeeee);
+    background: rgba(0,0,0,0);
     color: black;
-    border: black 0.07em solid;
+    border: black 0.08em solid;
 }
 
 .primary:hover {
