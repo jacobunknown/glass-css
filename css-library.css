@@ -28,7 +28,7 @@ body:not(.navbar) {
 }
 
 .primary {
-    background-color: var(--primary);
+    background: linear-gradient(var(--primary), black);
     color: white;
 }
 
