@@ -41,7 +41,7 @@ body {
 }
 
 .btn-regular:hover {
-    filter: brightness(70%)
+    filter: brightness(80%)
 }
 
 .btn-regular:active {
