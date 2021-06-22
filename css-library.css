@@ -13,6 +13,9 @@ body {
     overflow-x: hidden;
 }
 
+body:not(header) {
+    margin-left: 1em;
+}
 
 .btn {
     text-decoration: none;
