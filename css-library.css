@@ -30,12 +30,12 @@ body {
     border: black 0.07em solid;
 }
 
-.btn:hover {
-    filter: brightness(85%);
+.btn-primary:hover {
+    filter: brightness(60%);
     filter: saturate(60%)
 }
 
-.btn:active {
+.btn-primary:active {
     filter: saturate(50%);
     filter: brightness(140%);
 }
