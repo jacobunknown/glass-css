@@ -1,1 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+:root {
+    --primary: #0077ff;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 1vh;
+    padding: 0.3em;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    background: none;
+}
+
+.primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.regular {
+    background: linear-gradient(white, #eeeeee);
+    color: black;
+    border: black 0.07em solid;
+}
+
+.primary:hover {
+    filter: brightness(60%);
+    filter: saturate(60%)
+}
+
+.primary:active {
+    filter: saturate(50%);
+    filter: brightness(140%);
+}
+
+.regular:hover {
+    filter: brightness(90%)
+}
+
+.regular:active {
+    filter: saturate(50%);
+    filter: brightness(140%);
+}
+
+.navbar {
+    background-color: blue;
+    display: flex
+    flex-direction: row;
+}
