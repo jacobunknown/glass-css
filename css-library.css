@@ -13,7 +13,7 @@ body {
     overflow-x: hidden;
 }
 
-body:not(header) {
+body:not(.navbar) {
     margin-left: 1em;
 }
 
