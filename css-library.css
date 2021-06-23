@@ -28,10 +28,9 @@ body:not(.navbar) {
 }
 
 .primary {
-    background: filer(brightness(150%) var(--primary));
-    background: linear-gradient(var(--primary), rgba(255,255,255,0)), 
-        filter(brightness(150%), var(--primary));
-    background-blend-mode: normal;
+    background: var(--primary);
+    background: linear-gradient(rgb(255,255,255), rgb(0,0,0));
+    background-blend-mode: lighten;
     color: white;
 }
 
