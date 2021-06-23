@@ -213,10 +213,18 @@ body {
     align-items: center;
     height: 5em;
     margin: 0;
-    overflow-x: scroll;
+    overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     font-family: 'Roboto', sans-serif;
+}
+
+.navbar.vertical {
+    flex-direction: column;
+}
+
+.navbar.horizontal {
+    flex-direction: row;
 }
 
 .navbar::-webkit-scrollbar {
