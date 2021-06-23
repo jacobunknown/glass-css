@@ -34,7 +34,7 @@ body:not(.navbar) {
 
 .primary {
     background: hsl(var(--primary));
-    background: linear-gradient(hsl(var(--primary)), hsl(var(--primary-light));
+    /* background: linear-gradient(hsl(var(--primary)), hsl(var(--primary-light)); /
     color: white;
 }
 
