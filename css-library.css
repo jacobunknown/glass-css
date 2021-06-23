@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root {
-    --primary: 66, 135, 245;
+    --primary-hue: 217;
+    --primary-saturation: 90;
+    --primary-lightness: 0.6;
+    
+    --primary: hsl(var(--primary-hue),var(--primary-saturation),var(--primary-lightness));
+    --primary-light: hsl(var(--primary-hue),var(--primary-saturation),1)
 }
 
 
@@ -29,7 +34,7 @@ body:not(.navbar) {
 
 .primary {
     background: rgb(var(--primary));
-    background: linear-gradient(rgb(var(--primary)), rgba(var(--primary)), 0.5);
+    background: linear-gradient(var(--primary), var(--primary-light));
     background-blend-mode: lighten;
     color: white;
 }
