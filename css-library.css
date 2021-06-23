@@ -5,8 +5,8 @@
     --primary-s: 90;
     --primary-l: 0.6;
     
-    --primary: var(--primary-hue),var(--primary-saturation),var(--primary-lightness);
-    --primary-light: var(--primary-hue),var(--primary-saturation),1;
+    --primary: var(--primary-h),var(--primary-s),var(--primary-l);
+    --primary-light: var(--primary-h),var(--primary-s),1;
 }
 
 
@@ -34,7 +34,7 @@ body:not(.navbar) {
 
 .primary {
     background: hsl(var(--primary));
-    /* background: linear-gradient(hsl(var(--primary)), hsl(var(--primary-light)); /
+    /* background: linear-gradient(hsl(var(--primary)), hsl(var(--primary-light)); */
     color: white;
 }
 
@@ -65,7 +65,7 @@ body:not(.navbar) {
 
 
 .navbar {
-    background-color: var(--primary);
+    background-color: hsl(var(--primary));
     display: flex;
     justify-content: flex-start;
     align-items: center;
