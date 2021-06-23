@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
     /* Primary color */
@@ -69,6 +68,7 @@ body {
     background: none;
     transition: all 0.2s;
     backdrop-filter: blur(2px);
+    text-align: center;
 }
 
 /* Primary Buttons */
@@ -119,7 +119,7 @@ body {
 
 .regular {
     background: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--dark);
     border: var(--dark) 0.15em solid;
     padding: 0.15em;
@@ -204,6 +204,8 @@ body {
     background: var(--pink);
 }
 
+/* Navbar */
+
 .navbar {
     background-color: var(--primary);
     display: flex;
@@ -240,4 +242,21 @@ body {
 
 .underlined a:hover {
     border-bottom: 0.2em var(--dark) solid;
+}
+
+/* Forms */
+
+input[type=text] {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em;
+    border-radius: 1em;
+    text-decoration: none;
+    border: 0.2em var(--dark) solid;
+    color: var(--dark);
+    outline: none;
+    transition: all 0.2s;
+}
+
+input[type=text]:focus {
+    box-shadow: 0px 0px 0.7em var(--dark);
 }

@@ -7,13 +7,26 @@
     <title>Document</title>
     <link rel="stylesheet" href="css-library.css">
     <style>
-        .everything {
-            display: grid;
-            justify-content: left;
-            gap: 1em;
+        .margin {
             margin-left: 1em;
             margin-bottom: 1em;
+            font-size: 2em;
             font-family: 'Roboto', sans-serif;
+        }
+        .form {
+            margin-left: 1em;
+            font-size: 2em;
+            display: grid;
+            justify-content: left;
+            gap: 0.01em;
+            margin-bottom: 1em;
+        }
+        .form.btn {
+            font-size: 0.1em;
+        }
+        input[type=text] {
+            margin-bottom: 1em;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -26,28 +39,16 @@
             <a href="#">Contact</a>
         <nav>
     </header>
-    <h1 class="everything">Header</h1>
-    <p class="everything">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-    
-    <div class="everything">
-        <a href="https://jacobunknown.com" class="btn primary red">Primary Button</a>
-        <a href="https://jacobunknown.com" class="btn regular red">Regular Button</a>
-        
-        <a href="https://jacobunknown.com" class="btn primary yellow">Primary Button</a>
-        <a href="https://jacobunknown.com" class="btn regular yellow">Regular Button</a>
-    
-        <a href="https://jacobunknown.com" class="btn primary green">Primary Button</a>
-        <a href="https://jacobunknown.com" class="btn regular green">Regular Button</a>
-    
-        <a href="https://jacobunknown.com" class="btn primary blue">Primary Button</a>
-        <a href="https://jacobunknown.com" class="btn regular blue">Regular Button</a>
-    
-        <a href="https://jacobunknown.com" class="btn primary purple">Primary Button</a>
-        <a href="https://jacobunknown.com" class="btn regular purple">Regular Button</a>
-    
-        <a href="https://jacobunknown.com" class="btn primary pink">Primary Button</a>
-        <a href="https://jacobunknown.com" class="btn regular pink">Regular Button</a>
-    </div>
+    <h1 class="margin">Header</h1>
+    <p class="margin">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+
+    <form class="form">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+        <a href="" class="btn primary purple">Submit</a>
+      </form>
     
 </body>
 </html>
