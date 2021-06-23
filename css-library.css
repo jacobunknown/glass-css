@@ -28,8 +28,8 @@ body:not(.navbar) {
 }
 
 .primary {
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, var(--primary) 0%, rgba(1,1,1,0.5) 100%);
+    background: var(--primary);
+    background: linear-gradient(var(--primary), rgba(1,1,1,0.5));
     color: white;
 }
 
