@@ -1,56 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 :root {
-    --primary: #4287f5;
+    /* Primary color */
+    --primary-h: 217;
+    --primary-s: 90%;
+    --primary-l: 50%;
+
+    --primary: hsl(var(--primary-h), var(--primary-s), var(--primary-l));
+    --primary-light: hsl(var(--primary-h), var(--primary-s), calc(var(--primary-l) + 15%));
+
+    /* Dark color */
+    --dark-h: 217;
+    --dark-s: 90%;
+    --dark-l: 30%;
+
+    --dark: hsl(var(--dark-h), var(--dark-s), var(--dark-l));
+
+    /* Light color */
+    --light-h: 1;
+    --light-s: 0%;
+    --light-l: 100%;
+
+    --light: hsl(var(--light-h), var(--light-s), var(--light-l));
+
+    /* Red */
+    --red: hsl(0, 90%, 50%);
+    --red-light: hsl(0, 90%, calc(50% + 15%));
+
+    /* Yellow */
+    --yellow: hsl(60, 90%, 50%);
+    --yellow-light: hsl(60, 90%, calc(50% + 15%));
+
+    /* Green */
+    --green: hsl(120, 90%, 50%);
+    --green-light: hsl(120, 90%, calc(50% + 15%));
+
+    /* Blue */
+    --blue: hsl(217, 90%, 50%);
+    --blue-light: hsl(217, 90%, calc(50% + 15%));
+
+    /* Purple */
+    --purple: hsl(275, 90%, 50%);
+    --purple-light: hsl(275, 90%, calc(50% + 15%));
+
+    /* Pink */
+    --pink: hsl(320, 90%, 50%);
+    --pink-light: hsl(320, 90%, calc(50% + 15%));
+    
 }
 
 
 body {
     background-color: white;
-    font-family: 'Roboto', sans-serif;
     margin: 0%;
     overscroll-behavior: none;
     overflow-x: hidden;
 }
 
-body:not(.navbar) {
-    margin-left: 1em;
-}
+/* Buttons */
 
 .btn {
     text-decoration: none;
     font-size: 1.5em;
-    border-radius: 1vh;
+    border-radius: 2vh;
     padding: 0.3em;
     border: none;
     background: none;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s;
+    backdrop-filter: blur(2px);
 }
+
+/* Primary Buttons */
 
 .primary {
-    background: var(--primary);
-    /* background: linear-gradient(hsl(var(--primary)), hsl(var(--primary-light)); */
-    color: white;
-}
-
-.regular {
-    background: rgba(0,0,0,0);
-    color: black;
-    border: black 0.08em solid;
+    background: linear-gradient(to right, var(--primary), var(--primary-light));
+    font-family: 'Roboto', sans-serif;
+    color: var(--light);
+    opacity: 0.8;
+    z-index: 1;
 }
 
 .primary:hover {
-    filter: brightness(60%);
-    filter: saturate(60%)
+    filter: brightness(110%);
 }
 
 .primary:active {
-    filter: saturate(50%);
-    filter: brightness(140%);
+    filter: brightness(90%);
+}
+
+/* Colors */
+
+.red {
+    background: linear-gradient(to right, var(--red), var(--red-light));
+}
+
+.yellow {
+    background: linear-gradient(to right, var(--yellow), var(--yellow-light));
+}
+
+.green {
+    background: linear-gradient(to right, var(--green), var(--green-light));
+}
+
+.blue {
+    background: linear-gradient(to right, var(--blue), var(--blue-light));
+}
+
+.purple {
+    background: linear-gradient(to right, var(--purple), var(--purple-light));
+}
+
+.pink {
+    background: linear-gradient(to right, var(--pink), var(--pink-light));
+}
+
+/* Regular Buttons */
+
+.regular {
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark);
+    border: var(--dark) 0.15em solid;
+    padding: 0.15em;
+    transition: all 0.2s;
 }
 
 .regular:hover {
-    filter: brightness(90%)
+    background: var(--dark);
+    color: var(--light);
 }
 
 .regular:active {
@@ -58,6 +136,73 @@ body:not(.navbar) {
     filter: brightness(140%);
 }
 
+/* Regular Button Colors */
+
+.regular.red {
+    color: var(--red);
+    border: var(--red) 0.15em solid;
+}
+
+.regular.red:hover {
+    color: var(--light);
+    border: var(--red) 0.15em solid;
+    background: var(--red);
+}
+
+.regular.yellow {
+    color: var(--yellow);
+    border: var(--yellow) 0.15em solid;
+}
+
+.regular.yellow:hover {
+    color: var(--light);
+    border: var(--yellow) 0.15em solid;
+    background: var(--yellow);
+}
+
+.regular.green {
+    color: var(--yellow);
+    border: var(--yellow) 0.15em solid;
+}
+
+.regular.green:hover {
+    color: var(--light);
+    border: var(--green) 0.15em solid;
+    background: var(--green);
+}
+
+.regular.blue {
+    color: var(--blue);
+    border: var(--blue) 0.15em solid;
+}
+
+.regular.blue:hover {
+    color: var(--light);
+    border: var(--blue) 0.15em solid;
+    background: var(--blue);
+}
+
+.regular.purple {
+    color: var(--purple);
+    border: var(--purple) 0.15em solid;
+}
+
+.regular.purple:hover {
+    color: var(--light);
+    border: var(--purple) 0.15em solid;
+    background: var(--purple);
+}
+
+.regular.pink {
+    color: var(--pink);
+    border: var(--pink) 0.15em solid;
+}
+
+.regular.pink:hover {
+    color: var(--light);
+    border: var(--pink) 0.15em solid;
+    background: var(--pink);
+}
 
 .navbar {
     background-color: var(--primary);
@@ -69,6 +214,7 @@ body:not(.navbar) {
     overflow-x: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar::-webkit-scrollbar {
@@ -79,14 +225,19 @@ body:not(.navbar) {
     text-decoration: none;
     margin-left: 1em;
     margin-right: 1em;
-    color: white;
+    color: var(--light);
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
     overflow: visible;
-    transition: all 0.3s;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 0em var(--dark) solid;
 }
 
-.navbar a:hover {
-    border-bottom: 0.2em black solid;
+.non-underlined a:hover {
+    color: var(--dark);
+}
+
+.underlined a:hover {
+    border-bottom: 0.2em var(--dark) solid;
 }
