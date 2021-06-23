@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root {
-    --primary-h: 217;
-    --primary-s: 90;
-    --primary-l: 60;
-    
-    --primary: var(--primary-h),var(--primary-s),var(--primary-l);
-    --primary-light: var(--primary-h),var(--primary-s),1;
+    --primary: #4287f5;
 }
 
 
@@ -33,7 +28,7 @@ body:not(.navbar) {
 }
 
 .primary {
-    background: hsl(var(--primary));
+    background: var(--primary);
     /* background: linear-gradient(hsl(var(--primary)), hsl(var(--primary-light)); */
     color: white;
 }
@@ -65,7 +60,7 @@ body:not(.navbar) {
 
 
 .navbar {
-    background-color: hsl(var(--primary));
+    background-color: var(--primary);
     display: flex;
     justify-content: flex-start;
     align-items: center;
