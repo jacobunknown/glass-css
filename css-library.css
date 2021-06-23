@@ -29,7 +29,7 @@ body:not(.navbar) {
 
 .primary {
     background: var(--primary);
-    background: linear-gradient(var(--primary), rgba(255,255,255,0.5));
+    background: filter(brighness(150%), var(--primary)), linear-gradient(var(--primary), rgba(255,255,255,0));
     color: white;
 }
 
