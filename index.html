@@ -7,18 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/css-library.css">
     <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
         .margin {
             margin-left: 1em;
             margin-bottom: 1em;
             font-family: 'Roboto', sans-serif;
-        }
-        .mid-btn {
-            font-family: 'Roboto', sans-serif;
-            text-align: center;
-            justify-self: center;
-            display: block;
-            margin: auto;
-            width: 65%;
         }
         .mid {
             font-family: 'Roboto', sans-serif;
@@ -26,15 +21,39 @@
             justify-self: center;
             display: block;
             margin: auto;
+            width: fit-content;
         }
         h1 {
             font-size: 2em;
+            margin-bottom: 2em;
+            transform-origin: center;
         }
         header {
-            margin-bottom: 1.5em;
+            margin-bottom: 1em;
         }
         p {
             margin-bottom: 2em;
+        }
+        .btn {
+            margin-top: 0.5em;
+            transform-origin: center;
+        }
+        .big {
+            margin-top: 2em;
+            margin-bottom: 2em;
+            height: 20em;
+            width: 100%;
+            display: flex;
+            padding: 1em;
+            gap: 1em;
+            align-items: center;
+            text-align: center;
+        }
+        .btn {
+            height:fit-content
+        }
+        .white {
+            color: white;
         }
     </style>
 </head>
@@ -45,9 +64,17 @@
             <a href="#">Docs</a>
         <nav>
     </header>
-    <h1 class="mid">CSS Library</h1>
-    <p class="mid">CSS Library is a simple css component library.</p>
-    <a class="mid-btn btn primary purple" href="https://github.com/jacobunknown/css-library">CSS Library on GitHub</a>
-    
+    <main>
+        <h1 class="mid">CSS Library</h1>
+        <p class="mid">CSS Library is a simple css component library.</p>
+        <a class="mid btn primary purple" href="https://github.com/jacobunknown/css-library">CSS Library on GitHub</a>
+        <div class="mid blue big">
+            <h1 class="white">Lots of colors and variations</h1>
+            <a class="btn green primary" href="#">Red Primary Button</a>
+        </div>
+    </main>
+    <footer>
+        <p class="mid">Site created by <a href="https://jacobunknown.com">Jacob Unknown</a> using components from <a href="https://github.com/jacobunknown/css-library">css-library</a>.</p>
+    </footer>
 </body>
 </html>
