@@ -89,6 +89,7 @@ body {
     color: var(--light);
     opacity: 0.8;
     z-index: 1;
+    border: var(--dark) 0.1em solid;
 }
 
 .primary:hover {
@@ -103,26 +104,32 @@ body {
 
 .red {
     background: linear-gradient(to right, var(--red), var(--red-light));
+    border: var(--red) 0.15em solid;
 }
 
 .yellow {
     background: linear-gradient(to right, var(--yellow), var(--yellow-light));
+    border: var(--yellow) 0.15em solid;
 }
 
 .green {
     background: linear-gradient(to right, var(--green), var(--green-light));
+    border: var(--green) 0.15em solid;
 }
 
 .blue {
     background: linear-gradient(to right, var(--blue), var(--blue-light));
+    border: var(--blue) 0.15em solid;
 }
 
 .purple {
     background: linear-gradient(to right, var(--purple), var(--purple-light));
+    border: var(--purple) 0.15em solid;
 }
 
 .pink {
     background: linear-gradient(to right, var(--pink), var(--pink-light));
+    border: var(--pink) 0.15em solid;
 }
 
 /* Regular Buttons */
@@ -171,8 +178,8 @@ body {
 }
 
 .regular.green {
-    color: var(--yellow);
-    border: var(--yellow) 0.15em solid;
+    color: var(--green);
+    border: var(--green) 0.15em solid;
 }
 
 .regular.green:hover {
@@ -216,12 +223,17 @@ body {
 
 /* Navbar */
 
+header {
+    width: 100%;
+}
+
 .navbar {
     background-color: var(--primary);
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 5em;
+    width: 100%;
     margin: 0;
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -264,7 +276,7 @@ body {
 
 /* Forms */
 
-input[type=text] {
+.text-input {
     font-family: 'Roboto', sans-serif;
     padding: 0.5em;
     border-radius: 1em;
@@ -275,6 +287,10 @@ input[type=text] {
     transition: all 0.2s;
 }
 
-input[type=text]:focus {
+.text-input:focus {
     box-shadow: 0px 0px 0.7em var(--dark);
+}
+
+.chk-box {
+    border-radius: 0vh;
 }

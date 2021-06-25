@@ -1,0 +1,75 @@
+:root {
+    --light-h: 100;
+    --light-s: 0%;
+    --light-l: 100%;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+.mid {
+    text-align: center;
+    justify-self: center;
+    display: block;
+    margin: auto;
+    width: fit-content;
+    margin-top: 0.5em;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 2em;
+    transform-origin: center;
+}
+nav {
+    width: 100%;
+}
+header {
+    width: 100%;
+}
+footer {
+    margin-bottom: 1em;
+}
+p {
+    margin-bottom: 2em;
+}
+.btn {
+    margin-top: 0.5em;
+    transform-origin: center;
+}
+.big {
+    height: fit-content;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-right: 0%;
+    margin-right: 0%;
+}
+.btn {
+    height: fit-content;
+}
+.white {
+    color: white;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
