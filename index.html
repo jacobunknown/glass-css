@@ -7,8 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/css-library.css">
     <style>
+        :root {
+            --light-h: 100;
+            --light-s: 0%;
+            --light-l: 100%;
+        }
         * {
             font-family: 'Roboto', sans-serif;
+        }
+        main {
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            display: block;
         }
         .margin {
             margin-left: 1em;
@@ -30,6 +41,13 @@
         }
         header {
             margin-bottom: 1em;
+            width: 100%;
+        }
+        nav {
+            width: 100%;
+        }
+        footer {
+            margin-bottom: 1em;
         }
         p {
             margin-bottom: 2em;
@@ -39,22 +57,30 @@
             transform-origin: center;
         }
         .big {
-            margin-top: 2em;
-            margin-bottom: 2em;
-            height: 20em;
+            height: fit-content;
             width: 100%;
-            display: flex;
             padding: 1em;
-            gap: 1em;
+            margin-top: 1em;
+            margin-bottom: 1em;
             align-items: center;
+            justify-content: center;
             text-align: center;
         }
         .btn {
-            height:fit-content
+            height: fit-content;
         }
         .white {
             color: white;
         }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            white-space: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
     </style>
 </head>
 <body>
@@ -70,7 +96,14 @@
         <a class="mid btn primary purple" href="https://github.com/jacobunknown/css-library">CSS Library on GitHub</a>
         <div class="mid blue big">
             <h1 class="white">Lots of colors and variations</h1>
-            <a class="btn green primary" href="#">Red Primary Button</a>
+            <div class="buttons">
+                <a class="btn red primary" href="#">Red Primary Button</a>
+                <a class="btn yellow regular" href="#">Yellow Regular Button</a>
+                <a class="btn green primary" href="#">Green Primary Button</a>
+                <a class="btn blue regular" href="#">Blue Regular Button</a>
+                <a class="btn purple primary" href="#">Purple Primary Button</a>
+                <a class="btn pink regular" href="#">Pink Regular Button</a>
+            </div>
         </div>
     </main>
     <footer>
