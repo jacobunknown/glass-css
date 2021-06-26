@@ -258,10 +258,14 @@ header {
 
 .navbar.vertical {
     flex-direction: column;
+    height: 100%;
+    width: 5em;
 }
 
 .navbar.horizontal {
     flex-direction: row;
+    height: 5em;
+    width: 100%;
 }
 
 .navbar::-webkit-scrollbar {
