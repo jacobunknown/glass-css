@@ -40,12 +40,17 @@ p {
 .btn {
     margin-top: 0.5em;
     transform-origin: center;
+    height: fit-content;
+    font-size: 1.5em;
+}
+.text-input {
+    font-size: 1.2em;
 }
 .big {
     height: fit-content;
     width: 100%;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     margin-top: 1em;
     margin-bottom: 1em;
     align-items: center;
@@ -53,9 +58,6 @@ p {
     text-align: center;
     padding-right: 0%;
     margin-right: 0%;
-}
-.btn {
-    height: fit-content;
 }
 .white {
     color: white;
@@ -68,8 +70,15 @@ p {
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 h1 {
     text-align: center;
     font-size: 1.5em;
+}
+
+.padding {
+    padding-top: 2em;
+    padding-bottom: 2em;
 }

@@ -63,9 +63,8 @@ body {
     height: fit-content;
     width: fit-content;
     text-decoration: none;
-    font-size: 1.5em;
-    border-radius: 2vh;
-    padding: 0.3em;
+    font-size: 1em;
+    border-radius: 5vh;
     border: none;
     background: none;
     transition: all 0.2s;
@@ -89,7 +88,9 @@ body {
     color: var(--light);
     opacity: 0.8;
     z-index: 1;
-    border: var(--dark) 0.1em solid;
+    padding: 0.3em;
+    padding-left: 0.6em;
+    padding-right: 0.6em;
 }
 
 .primary:hover {
@@ -104,32 +105,44 @@ body {
 
 .red {
     background: linear-gradient(to right, var(--red), var(--red-light));
-    border: var(--red) 0.15em solid;
 }
 
 .yellow {
     background: linear-gradient(to right, var(--yellow), var(--yellow-light));
-    border: var(--yellow) 0.15em solid;
 }
 
 .green {
     background: linear-gradient(to right, var(--green), var(--green-light));
-    border: var(--green) 0.15em solid;
 }
 
 .blue {
     background: linear-gradient(to right, var(--blue), var(--blue-light));
-    border: var(--blue) 0.15em solid;
 }
 
 .purple {
     background: linear-gradient(to right, var(--purple), var(--purple-light));
-    border: var(--purple) 0.15em solid;
 }
 
 .pink {
     background: linear-gradient(to right, var(--pink), var(--pink-light));
-    border: var(--pink) 0.15em solid;
+}
+
+/* Gradients */
+
+.gradient1 {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
 }
 
 /* Regular Buttons */
@@ -139,8 +152,10 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--dark);
     border: var(--dark) 0.15em solid;
-    padding: 0.15em;
     transition: all 0.2s;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
 }
 
 .regular:hover {
@@ -281,7 +296,8 @@ header {
     padding: 0.5em;
     border-radius: 1em;
     text-decoration: none;
-    border: 0.2em var(--dark) solid;
+    border: none;
+    border-bottom: 0.3em var(--dark) solid;
     color: var(--dark);
     outline: none;
     transition: all 0.2s;
