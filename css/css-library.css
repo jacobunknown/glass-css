@@ -259,6 +259,8 @@ header {
     height: 100%;
     width: fit-content;
     font-size: 0.8em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .navbar.horizontal {
@@ -283,6 +285,8 @@ header {
     overflow: visible;
     transition: all 0.2s ease-in-out;
     border-bottom: 0em var(--dark) solid;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
 }
 
 .non-underlined a:hover {
