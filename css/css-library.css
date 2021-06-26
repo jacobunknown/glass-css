@@ -247,8 +247,6 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 5em;
-    width: 100%;
     margin: 0;
     overflow: scroll;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -259,7 +257,7 @@ header {
 .navbar.vertical {
     flex-direction: column;
     height: 100%;
-    width: 5em;
+    width: fit-content;
 }
 
 .navbar.horizontal {
