@@ -1,6 +1,5 @@
 # css-library
 
-this is not at all production ready yet.
-Documentation coming soon!
-
 https://glasscss.jacobunknown.com
+
+Glass CSS is a simple glassmorphism css component library.
