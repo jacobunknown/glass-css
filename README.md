@@ -1,4 +1,4 @@
-# css-library
+# glass-css
 
 https://glasscss.jacobunknown.com
 
