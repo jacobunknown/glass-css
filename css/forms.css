@@ -1,0 +1,278 @@
+/* Lato Google Font (RFE) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+
+/* Variables (RFE) */
+:root {
+    --btn-opacity: 0.7;
+    --glass-opacity: 0.1;
+    --blur-amount: 7px;
+    /* Primary color */
+
+    --primary: rgba(13, 101, 242, 0.5);
+
+    /* Dark color */
+    --dark-h: 217;
+    --dark-s: 90%;
+    --dark-l: 30%;
+
+    --dark: hsla(var(--dark-h), var(--dark-s), var(--dark-l), var(--btn-opacity));
+
+    /* Light color */
+    --light-h: 4;
+    --light-s: 0%;
+    --light-l: 100%;
+
+    --light: hsla(var(--light-h), var(--light-s), var(--light-l), var(--btn-opacity));
+    --light-glass: hsla(var(--light-h), var(--light-s), var(--light-l), var(--glass-opacity));
+
+    /* Red */
+    --red: hsla(0, 90%, 50%, var(--btn-opacity));
+    --red-light: hsla(0, 90%, calc(50% + 10%), var(--btn-opacity));
+
+    /* Yellow */
+    --yellow: hsla(60, 90%, 50%, var(--btn-opacity));
+    --yellow-light: hsla(60, 90%, calc(50% + 10%), var(--btn-opacity));
+
+    /* Green */
+    --green: hsla(120, 90%, 50%, var(--btn-opacity));
+    --green-light: hsla(120, 90%, calc(50% + 10%), var(--btn-opacity));
+
+    /* Blue */
+    --blue: hsla(217, 90%, 50%, var(--btn-opacity));
+    --blue-light: hsla(217, 90%, calc(50% + 10%), var(--btn-opacity));
+
+    /* Purple */
+    --purple: hsla(275, 90%, 50%, var(--btn-opacity));
+    --purple-light: hsla(275, 90%, calc(50% + 10%), var(--btn-opacity));
+
+    /* Pink */
+    --pink: hsla(320, 90%, 50%, var(--btn-opacity));
+    --pink-light: hsla(320, 95%, calc(100% + 10%), var(--btn-opacity));
+    
+}
+
+/* Resetting  (RFE) */
+* {
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Remove text select (RFE)*/
+.btn, .navbar a {
+    user-select: none; /* Standard */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+}
+
+/* Making sure Navbar can work (RFE)*/
+body {
+    background-color: white;
+    margin: 0%;
+    padding: 0%;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+
+/* Glass/Panes (RFE) */
+.glass {
+    background: var(--light-glass);
+    backdrop-filter: blur(var(--blur-amount));
+    -moz-backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+    border-radius: 2vmax;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: rgba(100%, 100%, 100%, 0.3) 0.1em solid;
+    box-shadow: 0px 0px 2em rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    width: fit-content;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Colors (RFE) */
+.red {
+    background: var(--red);
+}
+
+.yellow {
+    background: var(--yellow);
+}
+
+.green {
+    background: var(--green);
+}
+
+.blue {
+    background: var(--blue);
+}
+
+.purple {
+    background: var(--purple);
+}
+
+.pink {
+    background: var(--pink);
+}
+
+.light {
+    background: var(--light);
+}
+
+.dark {
+    color: var(--dark);
+}
+
+/* Gradients (RFE) */
+.gradient1 {
+    background-image: linear-gradient(to top, rgba(255, 124, 218, var(--btn-opacity)) 0%, rgba(92, 153, 255, var(--btn-opacity)) 100%);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to right, rgba(92, 153, 255, var(--btn-opacity)) 0%, rgba(254, 255, 64, var(--btn-opacity)) 100%);
+}
+
+.gradient3 {
+    background: linear-gradient(90deg, rgba(182, 255, 210, var(--btn-opacity)) 0%, rgba(101, 138, 207, var(--btn-opacity)) 100%);
+}
+
+.gradient4 {
+    background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);
+}
+
+/* Forms */
+/* Text Inputs */
+.text-input {
+    font-family: 'Lato', sans-serif;
+    padding: 0.5em;
+    border-radius: 1em;
+    text-decoration: none;
+    border: none;
+    border-bottom: 0.3em var(--dark) solid;
+    color: var(--dark);
+    outline: none;
+    transition: all 0.2s;
+    background-color: var(--light);
+    height: fit-content;
+}
+
+.text-input:focus {
+    box-shadow: 0px 0px 0.7em var(--dark);
+}
+
+/* Checkboxes (not working yet)*/
+.check-box {
+    width: 1rem;
+    height: 1rem;
+    z-index: 100;
+    background-color: var(--light);
+    border: var(--dark) 0.1em solid;
+    border-radius: 0.7vmax;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.check-box:checked {
+    box-shadow: 0px 0px 0.3em var(--dark);
+}
+
+.check-box:checked:after {
+    content: '\2714';
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    font-size: 0.9rem;
+    text-align: center;
+    justify-content: center;
+    line-height: 1em;
+}
+
+/* Text select */
+.select {
+    font-family: 'Lato', sans-serif;
+    padding: 0.2em;
+    padding-left: 0.4em;
+    background: var(--light);
+    border-radius: 1vmax;
+    font-size: 1.5em;
+    transition: all 0.2s;
+    border: none;
+    border-bottom: 0.2em var(--dark) solid;
+    border-right: 1em var(--dark) solid;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+/* Glass Select */
+.select.glass {
+    border-right: rgba(100%, 100%, 100%, 0.3) 1em solid;
+}
+
+.glass {
+    background: var(--light-glass);
+    backdrop-filter: blur(var(--blur-amount));
+    -moz-backdrop-filter: blur(var(--blur-amount));
+    -webkit-backdrop-filter: blur(var(--blur-amount));
+    border: rgba(100%, 100%, 100%, 0.3) 0.1em solid;
+}
+
+.select.red {
+    background-color: var(--red);
+    color: var(--light);
+}
+
+.select:focus {
+    box-shadow: 0px 0px 0.7em var(--dark);
+}
+
+/* Radio buttons */
+.radio {
+    width: 1em;
+    height: 1em;
+    background-color: var(--light);
+    border: none;
+    border-radius: 100em;
+    cursor: pointer;
+    transition: all 0.1s;
+    border: 0.2em rgba(0, 0, 0, 0) solid;
+}
+
+.radio:checked {
+    border: 0.2em var(--light) solid;
+    background-color: var(--primary);
+}
+
+.radio:focus {
+    box-shadow: 0px 0px 0.7em var(--dark);
+}
+
+.radio.red:checked {
+    background-color: var(--red);
+}
+
+.radio.yellow:checked {
+    background-color: var(--yellow);
+}
+
+.radio.green:checked {
+    background-color: var(--green);
+}
+
+.radio.blue:checked {
+    background-color: var(--blue);
+}
+
+.radio.purple:checked {
+    background-color: var(--purple);
+}
+
+.radio.pink:checked {
+    background-color: var(--pink);
+}
