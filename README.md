@@ -2,7 +2,7 @@
 
 https://glasscss.jacobunknown.com
 
-Glass CSS is a simple glassmorphism css component library.
+Glass CSS is a small and simple glassmorphism css component library.
 Version 1 will be coming soon!
 
 <a href="https://glasscss.jacobunknown.com/demos/demo-1.html"><img src="screenshots/demo-1.png" width="35%"></a>
