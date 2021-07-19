@@ -1,4 +1,4 @@
-![npm](https://img.shields.io/npm/v/@jacobunknown/glass-css)
+<a href="https://www.npmjs.com/package/@jacobunknown/glass-css">![npm](https://img.shields.io/npm/v/@jacobunknown/glass-css)<a>
 # glass-css
 
 https://glasscss.jacobunknown.com
