@@ -1,3 +1,4 @@
+![npm](https://img.shields.io/npm/v/@jacobunknown/glass-css)
 # glass-css
 
 https://glasscss.jacobunknown.com
