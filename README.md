@@ -34,4 +34,4 @@ Glass/Panes:
 
 Or get through npm:
 
-npm i @jacobunknown/glass-css
+`npm i @jacobunknown/glass-css`
